@@ -72,6 +72,35 @@ onnx_deploy/
 
 Trained on ~80K Portuguese + ~80K English Wikipedia-sourced texts, merged and shuffled. Architecture: two-stream MLP with separate projection heads for SPLADE and Nomic features, trained via SGD with log loss. No fine-tuning of the embedding models — they remain frozen.
 
+## Categories (67)
+
+```
+aerospace                     astronomy           atmospheric_science
+automotive                    beauty              biology
+celebrity                     chemistry           civil_engineering
+communication_engineering     computer_science_and_technology
+design                        drama_and_film      economics
+electronic_science            entertainment       environmental_science
+fashion                       finance             food
+gamble                        game                geography
+health                        history             hobby
+hydraulic_engineering         instrument_science
+journalism_and_media_communication                landscape_architecture
+law                           library             literature
+materials_science             mathematics         mechanical_engineering
+medical                       mining_engineering  movie
+music_and_dance               news                nuclear_science
+ocean_science                 optical_engineering painting
+pet                           petroleum_and_natural_gas_engineering
+philosophy                    photo               physics
+politics                      psychology          public_administration
+relationship                  religion            sociology
+sports                        statistics          systems_science
+textile_science               topicality
+transportation_engineering    travel              urban_planning
+vulgar_language
+```
+
 ## Attribution
 
 - Base dataset: [`NeuML/wikipedia-domain-labels`](https://huggingface.co/datasets/NeuML/wikipedia-domain-labels)
